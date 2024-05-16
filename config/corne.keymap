@@ -10,26 +10,6 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    behaviors {
-        hold_r_command: hold_r_command {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HOLD_R_COMMAND";
-            bindings = <&kp R>, <&kp LEFT_CONTROL>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        hold_i_command: hold_i_command {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HOLD_I_COMMAND";
-            bindings = <&kp I>, <&kp RIGHT_CONTROL>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RCTL)>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -41,10 +21,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J       &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M       &kp N  &kp E      &kp I    &kp O          &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K       &kp H  &kp COMMA  &kp DOT  &kp FSLH       &kp ENTER
-                         &kp LGUI  &mo 1  &kp SPACE    &kp ESCAPE  &mo 2  &kp RALT
+&kp TAB    &kp Q  &kp W           &kp F           &kp P           &kp B        &kp J       &kp L            &kp U            &kp Y                &kp SEMICOLON  &kp BSPC
+&kp LCTRL  &kp A  &mt LEFT_ALT R  &mt LEFT_GUI S  &mt LEFT_GUI T  &kp G        &kp M       &mt RIGHT_GUI N  &mt RIGHT_ALT E  &mt RIGHT_CONTROL I  &kp O          &kp PIPE
+&kp LSHFT  &kp Z  &kp X           &kp C           &kp D           &kp V        &kp K       &kp H            &kp COMMA        &kp DOT              &kp FSLH       &kp ENTER
+                                  &mo 2           &mo 1           &kp SPACE    &kp ESCAPE  &mo 2            &mo 1
             >;
         };
 
