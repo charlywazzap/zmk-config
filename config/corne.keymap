@@ -39,6 +39,11 @@
             bindings = <&kp RC(SPACE)>;
             key-positions = <37 38>;
         };
+
+        combo_bluet_layer {
+            bindings = <&mo 3>;
+            key-positions = <39 40 41>;
+        };
     };
 
     behaviors {
@@ -79,10 +84,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1           &kp N2           &kp N3        &kp N4        &kp N5          &kp N6    &kp N7          &kp N8          &kp N9           &kp N0      &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN        &kp UP          &kp RIGHT        &trans      &trans
-&kp LSHFT   &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &bl BL_CYCLE  &trans        &trans          &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bl BL_TOG  &rgb_ug RGB_TOG
-                                              &kp LGUI      &trans        &kp SPACE       &kp RET   &trans          &kp RALT
+&trans     &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6    &kp N7          &kp N8          &kp N9           &kp N0  &kp BSPC
+&trans     &trans  &trans  &trans    &trans  &trans       &kp LEFT  &kp DOWN        &kp UP          &kp RIGHT        &trans  &trans
+&kp LSHFT  &trans  &trans  &trans    &trans  &trans       &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+                           &kp LGUI  &trans  &kp SPACE    &kp RET   &trans          &kp RALT
             >;
         };
 
@@ -98,6 +103,15 @@
 &kp LCTRL  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp MINUS  &kp EQUAL  &trans     &kp LBKT  &kp RBKT  &kp GRAVE
 &kp LSHFT  &kp N6    &kp N7  &kp N8    &kp N9    &kp N0       &kp UNDER  &kp PLUS   &trans     &kp LBRC  &kp RBRC  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+            >;
+        };
+
+        layer_kb_control {
+            bindings = <
+&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR      &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &bl BL_TOG
+&bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &rgb_ug RGB_TOG
+                                            &trans        &trans        &trans    &trans  &trans  &trans
             >;
         };
     };
