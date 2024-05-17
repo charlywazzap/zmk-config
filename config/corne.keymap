@@ -29,6 +29,16 @@
             layers = <0>;
             timeout-ms = <50>;
         };
+
+        combo_print_screen {
+            bindings = <&kp RC(RG(RS(N4)))>;
+            key-positions = <37 36>;
+        };
+
+        combo_app {
+            bindings = <&kp RC(SPACE)>;
+            key-positions = <37 38>;
+        };
     };
 
     behaviors {
