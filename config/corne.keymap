@@ -12,10 +12,11 @@
 
 &led_strip { chain-length = <28>; };
 
-chosen { zmk,underglow = &led_strip; };
 
 / {
-    combos {
+
+  chosen { zmk,underglow = &led_strip; };
+  combos {
         compatible = "zmk,combos";
 
         combo_escape {
