@@ -12,7 +12,6 @@
 
 &led_strip { chain-length = <28>; };
 
-chosen { zmk,underglow = &led_strip; };
 
 / {
 
@@ -61,6 +60,7 @@ chosen { zmk,underglow = &led_strip; };
         };
     };
 
+    chosen { zmk,underglow = &led_strip; };
     keymap {
         compatible = "zmk,keymap";
 
