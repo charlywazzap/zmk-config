@@ -1,7 +1,7 @@
 # zmk-config
 
 for online configuration please go here
-https://nickcoutsos.githubio/keymap-editor/
+https://nickcoutsos.github.io/keymap-editor/
 
 
 for more ideas check 
