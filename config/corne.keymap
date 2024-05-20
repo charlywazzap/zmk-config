@@ -74,10 +74,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE  &kp Q  &kp W                           &kp F                       &kp P                       &kp B    &kp J  &kp L                        &kp U                        &kp Y                            &kp SEMICOLON  &kp BSPC
-&kp TAB    &kp A  &homerow_mod_kp LEFT_CONTROL R  &homerow_mod_kp LEFT_ALT S  &homerow_mod_kp LEFT_GUI T  &kp G    &kp M  &homerow_mod_kp RIGHT_GUI N  &homerow_mod_kp RIGHT_ALT E  &homerow_mod_kp RIGHT_CONTROL I  &kp O          &kp BACKSLASH
-&kp LSHFT  &kp Z  &kp X                           &kp C                       &kp D                       &kp V    &kp K  &kp H                        &kp COMMA                    &kp COMMA                        &kp PERIOD     &kp ENTER
-                                                  &mo 2                       &kp SPACE                   &mo 1    &mo 2  &kp SPACE                    &mo 1
+&kp GRAVE  &kp Q                           &kp W                           &kp F                       &kp P                       &kp B    &kp J  &kp L                        &kp U                        &kp Y                            &kp SEMICOLON  &kp BSPC
+&kp TAB    &homerow_mod_kp LEFT_CONTROL A  &homerow_mod_kp LEFT_CONTROL R  &homerow_mod_kp LEFT_ALT S  &homerow_mod_kp LEFT_GUI T  &kp G    &kp M  &homerow_mod_kp RIGHT_GUI N  &homerow_mod_kp RIGHT_ALT E  &homerow_mod_kp RIGHT_CONTROL I  &kp O          &kp BACKSLASH
+&kp LSHFT  &kp Z                           &kp X                           &kp C                       &kp D                       &kp V    &kp K  &kp H                        &kp COMMA                    &kp COMMA                        &kp PERIOD     &kp ENTER
+                                                                           &mo 2                       &kp SPACE                   &mo 1    &mo 2  &kp SPACE                    &mo 1
             >;
         };
 
