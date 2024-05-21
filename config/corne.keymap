@@ -89,10 +89,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE  &kp Q                           &kp W                           &kp F                       &kp P                       &kp B             &kp J  &kp L                        &kp U                        &kp Y                            &kp SEMICOLON  &kp BSPC
-&kp TAB    &homerow_mod_kp LEFT_COMMAND A  &homerow_mod_kp LEFT_CONTROL R  &homerow_mod_kp LEFT_ALT S  &homerow_mod_kp LEFT_GUI T  &kp G             &kp M  &homerow_mod_kp RIGHT_GUI N  &homerow_mod_kp RIGHT_ALT E  &homerow_mod_kp RIGHT_CONTROL I  &kp O          &kp BACKSLASH
-&kp LSHFT  &kp Z                           &kp X                           &kp C                       &kp D                       &kp V             &kp K  &kp H                        &kp COMMA                    &kp PERIOD                       &kp SLASH      &kp ENTER
-                                                                           &dance_layer_1              &kp SPACE                   &dance_layer_2    &mo 2  &kp ENTER                    &mo 1
+&kp GRAVE  &kp Q                           &kp W                           &kp F                       &kp P                       &kp B             &kp J           &kp L                        &kp U                        &kp Y                            &kp SEMICOLON  &kp BSPC
+&kp TAB    &homerow_mod_kp LEFT_COMMAND A  &homerow_mod_kp LEFT_CONTROL R  &homerow_mod_kp LEFT_ALT S  &homerow_mod_kp LEFT_GUI T  &kp G             &kp M           &homerow_mod_kp RIGHT_GUI N  &homerow_mod_kp RIGHT_ALT E  &homerow_mod_kp RIGHT_CONTROL I  &kp O          &kp BACKSLASH
+&kp LSHFT  &kp Z                           &kp X                           &kp C                       &kp D                       &kp V             &kp K           &kp H                        &kp COMMA                    &kp PERIOD                       &kp ENTER      &kp SLASH
+                                                                           &dance_layer_2              &kp SPACE                   &dance_layer_1    &dance_layer_2  &kp ENTER                    &dance_layer_1
             >;
         };
 
@@ -104,10 +104,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8          &kp N9          &kp N0           &kp BSPC
-&trans  &trans  &trans  &trans  &trans  &trans    &none   &none   &none           &kp UP_ARROW    &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7          &kp N8          &kp N9           &kp N0  &kp BSPC
+&trans  &trans  &trans  &trans  &trans  &trans    &none   &none           &kp UP_ARROW    &none            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans          &trans
             >;
         };
 
