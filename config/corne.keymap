@@ -62,6 +62,20 @@
             flavor = "tap-preferred";
             require-prior-idle-ms = <100>;
         };
+
+        dance_layer_2: dance_layer_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DANCE_LAYER_2";
+            #binding-cells = <0>;
+            bindings = <&sl 2>, <&mo 2>;
+        };
+
+        dance_layer_1: dance_layer_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DANCE_LAYER_1";
+            #binding-cells = <0>;
+            bindings = <&sl 1>, <&mo 1>;
+        };
     };
 
     keymap {
@@ -75,10 +89,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE  &kp Q                           &kp W                           &kp F                       &kp P                       &kp B          &kp J  &kp L                        &kp U                        &kp Y                            &kp SEMICOLON  &kp BSPC
-&kp TAB    &homerow_mod_kp LEFT_COMMAND A  &homerow_mod_kp LEFT_CONTROL R  &homerow_mod_kp LEFT_ALT S  &homerow_mod_kp LEFT_GUI T  &kp G          &kp M  &homerow_mod_kp RIGHT_GUI N  &homerow_mod_kp RIGHT_ALT E  &homerow_mod_kp RIGHT_CONTROL I  &kp O          &kp BACKSLASH
-&kp LSHFT  &kp Z                           &kp X                           &kp C                       &kp D                       &kp V          &kp K  &kp H                        &kp COMMA                    &kp PERIOD                       &kp SLASH      &kp ENTER
-                                                                           &mo 2                       &kp SPACE                   &lt 1 SPACE    &mo 2  &kp ENTER                    &mo 1
+&kp GRAVE  &kp Q                           &kp W                           &kp F                       &kp P                       &kp B             &kp J  &kp L                        &kp U                        &kp Y                            &kp SEMICOLON  &kp BSPC
+&kp TAB    &homerow_mod_kp LEFT_COMMAND A  &homerow_mod_kp LEFT_CONTROL R  &homerow_mod_kp LEFT_ALT S  &homerow_mod_kp LEFT_GUI T  &kp G             &kp M  &homerow_mod_kp RIGHT_GUI N  &homerow_mod_kp RIGHT_ALT E  &homerow_mod_kp RIGHT_CONTROL I  &kp O          &kp BACKSLASH
+&kp LSHFT  &kp Z                           &kp X                           &kp C                       &kp D                       &kp V             &kp K  &kp H                        &kp COMMA                    &kp PERIOD                       &kp SLASH      &kp ENTER
+                                                                           &dance_layer_1              &kp SPACE                   &dance_layer_2    &mo 2  &kp ENTER                    &mo 1
             >;
         };
 
@@ -108,7 +122,7 @@
 &kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK         &kp LPAR  &kp RPAR  &kp BSPC
 &kp LCTRL  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp MINUS  &kp EQUAL  &kp SINGLE_QUOTE  &kp LBKT  &kp RBKT  &kp GRAVE
 &kp LSHFT  &kp N6    &kp N7  &kp N8    &kp N9    &kp N0       &kp UNDER  &kp PLUS   &trans            &kp LBRC  &kp RBRC  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+                             &kp LGUI  &trans    &trans       &kp RET    &trans     &kp RALT
             >;
         };
 
