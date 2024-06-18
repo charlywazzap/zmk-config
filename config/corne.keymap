@@ -82,10 +82,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC    &kp Q                           &kp W                           &kp F                       &kp P                           &kp B             &kp J           &kp L                        &kp U                        &kp Y                            &kp SEMI   &kp BSPC
-&kp TAB    &homerow_mod_kp LEFT_COMMAND A  &homerow_mod_kp LEFT_CONTROL R  &homerow_mod_kp LEFT_ALT S  &homerow_mod_kp LEFT_GUI T      &kp G             &kp M           &homerow_mod_kp RIGHT_GUI N  &homerow_mod_kp RIGHT_ALT E  &homerow_mod_kp RIGHT_CONTROL I  &kp O      &kp BACKSLASH
-&kp LSHFT  &kp Z                           &kp X                           &kp C                       &kp D                           &kp V             &kp K           &kp H                        &kp COMMA                    &kp PERIOD                       &kp MINUS  &kp SLASH
-                                                                           &dance_layer_1              &homerow_mod_kp LEFT_GUI SPACE  &dance_layer_1    &dance_layer_1  &kp RETURN                   &dance_layer_1
+&kp ESC    &kp Q                           &kp W                           &kp F                       &kp P                           &kp B             &kp J           &kp L                        &kp U                        &kp Y                            &kp MINUS   &kp SEMICOLON
+&kp TAB    &homerow_mod_kp LEFT_COMMAND A  &homerow_mod_kp LEFT_CONTROL R  &homerow_mod_kp LEFT_ALT S  &homerow_mod_kp LEFT_GUI T      &kp G             &kp M           &homerow_mod_kp RIGHT_GUI N  &homerow_mod_kp RIGHT_ALT E  &homerow_mod_kp RIGHT_CONTROL I  &kp O       &kp BACKSLASH
+&kp LSHFT  &kp Z                           &kp X                           &kp C                       &kp D                           &kp V             &kp K           &kp H                        &kp EQUAL                    &kp COMMA                        &kp PERIOD  &kp SLASH
+                                                                           &dance_layer_1              &homerow_mod_kp LEFT_GUI SPACE  &dance_layer_1    &dance_layer_1  &kp RETURN                   &kp BACKSPACE
             >;
         };
 
