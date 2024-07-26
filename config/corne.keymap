@@ -82,10 +82,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC    &kp Q                           &kp W                           &kp F                       &kp P                           &kp B             &kp J           &kp L                        &kp U                        &kp Y                            &kp MINUS      &kp BACKSPACE
-&kp TAB    &homerow_mod_kp LEFT_COMMAND A  &homerow_mod_kp LEFT_CONTROL R  &homerow_mod_kp LEFT_ALT S  &homerow_mod_kp LEFT_GUI T      &kp G             &kp M           &homerow_mod_kp RIGHT_GUI N  &homerow_mod_kp RIGHT_ALT E  &homerow_mod_kp RIGHT_CONTROL I  &kp O          &kp BACKSLASH
-&kp LSHFT  &kp Z                           &kp X                           &kp C                       &kp D                           &kp V             &kp K           &kp H                        &kp COMMA                    &kp PERIOD                       &kp SEMICOLON  &kp SLASH
-                                                                           &dance_layer_1              &homerow_mod_kp LEFT_GUI SPACE  &dance_layer_1    &dance_layer_1  &kp RETURN                   &kp DELETE
+&kp ESC    &kp Q  &kp W                           &kp F                       &kp P                           &kp B             &kp J           &kp L                        &kp U                        &kp Y                            &kp MINUS      &kp BACKSPACE
+&kp TAB    &kp A  &homerow_mod_kp LEFT_CONTROL R  &homerow_mod_kp LEFT_ALT S  &homerow_mod_kp LEFT_GUI T      &kp G             &kp M           &homerow_mod_kp RIGHT_GUI N  &homerow_mod_kp RIGHT_ALT E  &homerow_mod_kp RIGHT_CONTROL I  &kp O          &kp BACKSLASH
+&kp LSHFT  &kp Z  &kp X                           &kp C                       &kp D                           &kp V             &kp K           &kp H                        &kp COMMA                    &kp PERIOD                       &kp SEMICOLON  &kp SLASH
+                                                  &dance_layer_1              &homerow_mod_kp LEFT_GUI SPACE  &dance_layer_1    &dance_layer_1  &kp RETURN                   &kp DELETE
             >;
         };
 
@@ -100,7 +100,7 @@
 &kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS        &kp ASTRK       &kp LPAR          &kp RPAR  &kp BSPC
 &kp LCTRL  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp PLUS   &kp EQUAL       &kp UP_ARROW    &kp SINGLE_QUOTE  &kp LBKT  &kp RBKT
 &kp LSHFT  &kp N6    &kp N7  &kp N8    &kp N9    &kp N0       &kp MINUS  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp LBRC  &kp RBRC
-                             &kp LGUI  &trans    &trans       &kp RET    &trans          &kp RALT
+                             &trans    &trans    &trans       &trans     &trans          &trans
             >;
         };
 
