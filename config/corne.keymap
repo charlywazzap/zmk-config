@@ -58,9 +58,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <220>;
+            require-prior-idle-ms = <120>;
+            quick-tap-ms = <200>;
         };
 
         dance_layer_1: dance_layer_1 {
@@ -82,10 +83,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC    &kp Q  &kp W                           &kp F                       &kp P                           &kp B             &kp J           &kp L                        &kp U                        &kp Y                            &kp MINUS      &kp BACKSPACE
-&kp TAB    &kp A  &homerow_mod_kp LEFT_CONTROL R  &homerow_mod_kp LEFT_ALT S  &homerow_mod_kp LEFT_GUI T      &kp G             &kp M           &homerow_mod_kp RIGHT_GUI N  &homerow_mod_kp RIGHT_ALT E  &homerow_mod_kp RIGHT_CONTROL I  &kp O          &kp BACKSLASH
-&kp LSHFT  &kp Z  &kp X                           &kp C                       &kp D                           &kp V             &kp K           &kp H                        &kp COMMA                    &kp PERIOD                       &kp SEMICOLON  &kp SLASH
-                                                  &dance_layer_1              &homerow_mod_kp LEFT_GUI SPACE  &dance_layer_1    &dance_layer_1  &kp RETURN                   &kp DELETE
+&kp ESC    &kp Q                    &kp W                           &kp F                       &kp P                           &kp B             &kp J           &kp L                        &kp U                        &kp Y                            &kp MINUS                &kp BACKSPACE
+&kp TAB    &homerow_mod_kp A LCTRL  &homerow_mod_kp LEFT_CONTROL R  &homerow_mod_kp LEFT_ALT S  &homerow_mod_kp LEFT_GUI T      &kp G             &kp M           &homerow_mod_kp RIGHT_GUI N  &homerow_mod_kp RIGHT_ALT E  &homerow_mod_kp RIGHT_CONTROL I  &homerow_mod_kp O RCTRL  &kp BACKSLASH
+&kp LSHFT  &kp Z                    &kp X                           &kp C                       &kp D                           &kp V             &kp K           &kp H                        &kp COMMA                    &kp PERIOD                       &kp SEMICOLON            &kp SLASH
+                                                                    &dance_layer_1              &homerow_mod_kp LEFT_GUI SPACE  &dance_layer_1    &dance_layer_1  &kp RETURN                   &kp DELETE
             >;
         };
 
