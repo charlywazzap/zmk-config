@@ -58,10 +58,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <170>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <120>;
-            quick-tap-ms = <130>;
+            require-prior-idle-ms = <90>;
+            quick-tap-ms = <110>;
         };
 
         dance_layer_1: dance_layer_1 {
