@@ -60,7 +60,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <180>;
             quick-tap-ms = <100>;
         };
 
